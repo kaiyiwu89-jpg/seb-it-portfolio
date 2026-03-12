@@ -10,6 +10,8 @@ import {
   ShieldCheck,
 } from "lucide-react";
 
+import Image from "next/image";
+
 const fadeUp = (delay = 0) => ({
   initial: { opacity: 0, y: 32 },
   animate: { opacity: 1, y: 0 },
@@ -140,15 +142,19 @@ export default function Hero() {
               <div className="bg-card border border-border rounded-xl2 overflow-hidden shadow-card-lg">
                 {/* Photo placeholder */}
                 <div
-                  className="w-full flex items-center justify-center text-8xl"
+                  className="relative w-full"
                   style={{
                     aspectRatio: "3/4",
                     maxHeight: 420,
-                    background:
-                      "linear-gradient(145deg, #e8ecf8 0%, #d0d9f5 100%)",
                   }}
                 >
-                  👨‍💻
+                  <Image
+                    src="/profile.png"
+                    alt="IT Support Specialist"
+                    fill
+                    className="object-cover"
+                    priority
+                  />
                 </div>
                 {/* Card footer */}
                 <div className="flex items-center justify-between px-5 py-4 border-t border-border">
