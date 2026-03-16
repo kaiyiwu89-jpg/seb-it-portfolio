@@ -141,13 +141,7 @@ export default function Hero() {
             <div className="relative w-full max-w-sm">
               <div className="bg-card border border-border rounded-xl2 overflow-hidden shadow-card-lg">
                 {/* Photo placeholder */}
-                <div
-                  className="relative w-full"
-                  style={{
-                    aspectRatio: "3/4",
-                    maxHeight: 420,
-                  }}
-                >
+                <div className="relative w-full aspect-[3/4] max-h-[420px]">
                   <Image
                     src="/profile.png"
                     alt="IT Support Specialist"
@@ -199,9 +193,9 @@ export default function Hero() {
               </div>
 
               {/* Co-founder style label — like reference */}
-              <div className="absolute bottom-16 -right-10 hidden lg:flex items-center gap-1.5 text-xs text-ink-3 font-medium rotate-90 origin-left">
-                <span className="w-4 h-px bg-border inline-block" />
-                IT Specialist
+              <div className="absolute bottom-20 -right-6 hidden lg:flex items-center gap-2 text-xs text-ink-3 font-medium rotate-90 origin-right tracking-wide">
+                <span className="w-6 h-px bg-border inline-block" />
+                IT SPECIALIST
               </div>
             </div>
           </motion.div>
